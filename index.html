@@ -18,6 +18,7 @@
                     <li><a href="#A2">Abarth 595.</a></li>
                 </ul>
             </li>
+            <li><a href="#A3">Colaboranos.</a></li>
         </ul>
     </nav>
     <hr>
@@ -69,7 +70,53 @@
             <img src="./public/img/595.png">
 
         </section>
-        
+        <section>
+            <h2 id="A3">Colaboranos. :)</h2>
+            <form action="#" method="GET">
+                <fieldset>
+                    <fieldset>
+                        
+                        <legend>Informacion personal.</legend>
+                        <div>
+                            <label for="fname">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="Juan" required>
+                        </div>
+                        <div>
+                            <label for="lname">Apellido:</label>
+                            <input type="text" name="lname" id="lname" placeholder="Perez" required>
+                        </div>
+                        <div>
+                            <label for="uname">Nombre de usuario:</label>
+                            <input type="text" name="uname" id="uname" required pattern=".{5,12}">
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informacion de cuenta</legend>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="1234@qwee.com" required>
+                        </div>
+                        <div>
+                            <label for="pass"> Password:</label>
+                            <input type="password" name="pass" id="pass" required pattern=".{4,10}">
+                        </div>
+                        <div>
+                            <label for="pass"> Password:</label>
+                            <input type="password" name="pass" id="pass" placeholder="repite la contraseña" required pattern=".{4,10}">
+                        </div>
+                    </fieldset>
+                </fieldset>
+            <div>
+                <label>
+                    <input type="checkbox" name="notification" id="notification">
+                    Deseo recibir noticias por correo electronico
+                </label>    
+            </div>
+            <input type="submit" value="Sing In">
+            </form>
+            <p>DigitalNews nunca pedira tu contraseña por correo electronico</p>
+        </section>
         </article>
 </body>
 </html>
